@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(66deg,lightyellow,lightpink,aqua);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card{
+    width: 350px;
+    min-height: 450px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h1{
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-align: center;
+    margin: 10px;
+}
+
+input{
+    width: 250px;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    color: black;
+    text-transform: capitalize;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button{
+    width: 60px;
+    padding: 7px;
+    background-color: rgb(242, 189, 30);
+    border: 0;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.list-container{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.list-container li{
+    list-style: none;
+    margin: 10px;
+    background-color: rgb(223, 214, 214);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    word-wrap: break-word;
+    text-transform: capitalize;
+    text-align: left;
+    position: relative;
+    padding-right: 30px; 
+
+   /* padding-right creates space b/w span & li item  */
+}
+
+span{
+    position: absolute;
+    top:8px;
+    right: 8px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 25px;
+}
+
+span:hover{
+    background-color: lightslategrey;
+    border-radius: 5px;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+}
